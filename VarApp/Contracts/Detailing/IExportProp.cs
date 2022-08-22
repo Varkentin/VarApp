@@ -1,4 +1,4 @@
-﻿using VarApp.Core.Entity.Enums;
+﻿using VarApp.Core.Models.Detailing;
 
 namespace VarApp.Core.Contracts
 {

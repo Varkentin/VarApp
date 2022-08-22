@@ -1,6 +1,6 @@
 ﻿namespace VarApp.Core.Entity
 {
-    public class Base
+    public class Identity
     {
         public int Id { get; set; }
     }

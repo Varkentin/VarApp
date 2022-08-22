@@ -1,7 +1,4 @@
-﻿using VarApp.Core.Contracts;
-using VarApp.Core.Entity.Enums;
-
-namespace VarApp.Core.Entity
+﻿namespace VarApp.Core.Models.Detailing
 {
     public class ExportProp : IExportProp
     {

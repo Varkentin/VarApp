@@ -1,7 +1,8 @@
 ﻿namespace VarApp.Core.Entity
 {
-    public class Order : Base
+    public class User : Identity
     {
         public string Name { get; set; }
+        public string Phone { get; set; }
     }
 }

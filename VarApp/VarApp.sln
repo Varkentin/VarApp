@@ -3,13 +3,21 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32811.315
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VarApp.Core", "VarApp.Core.csproj", "{72CDCE5A-6093-47CE-B195-D596D3DC3EF9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VarApp.Core", "VarApp.Core.csproj", "{72CDCE5A-6093-47CE-B195-D596D3DC3EF9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VarApp.Test", "..\VarApp.Test\VarApp.Test.csproj", "{43158044-94D2-46DB-A02C-09A72680195B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VarApp.Test", "..\VarApp.Test\VarApp.Test.csproj", "{43158044-94D2-46DB-A02C-09A72680195B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VarApp.Api", "..\VarApp.Api\VarApp.Api.csproj", "{B8AE33EF-92E9-40E8-B9A7-7FEED412A051}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VarApp.Api", "..\VarApp.Api\VarApp.Api.csproj", "{B8AE33EF-92E9-40E8-B9A7-7FEED412A051}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VarApp.Services", "..\VarApp.Services\VarApp.Services.csproj", "{6EEED685-24E7-4287-936E-65920DE49985}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VarApp.UseCases", "..\VarApp.Services\VarApp.UseCases.csproj", "{6EEED685-24E7-4287-936E-65920DE49985}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VarApp.Utils", "..\VarApp.Utils\VarApp.Utils.csproj", "{250C8E4A-0677-447D-B458-5FFFC95BFABE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "server", "server", "{105E458F-9BE6-4EA2-ACD2-36D2197C459D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{FD7A0D0A-3C0D-42B9-B98F-BC07A8141BB9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "client", "client", "{3686AA60-A0F1-4FC2-918D-10F07EFED6AC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,9 +41,20 @@ Global
 		{6EEED685-24E7-4287-936E-65920DE49985}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6EEED685-24E7-4287-936E-65920DE49985}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6EEED685-24E7-4287-936E-65920DE49985}.Release|Any CPU.Build.0 = Release|Any CPU
+		{250C8E4A-0677-447D-B458-5FFFC95BFABE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{250C8E4A-0677-447D-B458-5FFFC95BFABE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{250C8E4A-0677-447D-B458-5FFFC95BFABE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{250C8E4A-0677-447D-B458-5FFFC95BFABE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{72CDCE5A-6093-47CE-B195-D596D3DC3EF9} = {105E458F-9BE6-4EA2-ACD2-36D2197C459D}
+		{43158044-94D2-46DB-A02C-09A72680195B} = {FD7A0D0A-3C0D-42B9-B98F-BC07A8141BB9}
+		{B8AE33EF-92E9-40E8-B9A7-7FEED412A051} = {105E458F-9BE6-4EA2-ACD2-36D2197C459D}
+		{6EEED685-24E7-4287-936E-65920DE49985} = {105E458F-9BE6-4EA2-ACD2-36D2197C459D}
+		{250C8E4A-0677-447D-B458-5FFFC95BFABE} = {105E458F-9BE6-4EA2-ACD2-36D2197C459D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {AF06BE48-49C9-4EE1-BEBD-40E491774BD8}
