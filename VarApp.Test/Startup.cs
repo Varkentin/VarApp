@@ -1,4 +1,6 @@
-﻿namespace VarApp.Test
+﻿using VarApp.UseCases.Features.Users;
+
+namespace VarApp.Test
 {
     public class Startup
     {

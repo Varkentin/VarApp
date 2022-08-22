@@ -1,3 +1,5 @@
+
+
 namespace VarApp.Test.Detailing
 {
     public class DetailingTest

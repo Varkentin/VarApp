@@ -9,7 +9,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VarApp.Test", "..\VarApp.Te
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VarApp.Api", "..\VarApp.Api\VarApp.Api.csproj", "{B8AE33EF-92E9-40E8-B9A7-7FEED412A051}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VarApp.UseCases", "..\VarApp.Services\VarApp.UseCases.csproj", "{6EEED685-24E7-4287-936E-65920DE49985}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VarApp.UseCases", "..\VarApp.UseCases\VarApp.UseCases.csproj", "{6EEED685-24E7-4287-936E-65920DE49985}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VarApp.Utils", "..\VarApp.Utils\VarApp.Utils.csproj", "{250C8E4A-0677-447D-B458-5FFFC95BFABE}"
 EndProject
