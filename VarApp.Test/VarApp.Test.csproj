@@ -24,7 +24,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\VarApp.Api\VarApp.Api.csproj" />
-    <ProjectReference Include="..\VarApp.Services\VarApp.UseCases.csproj" />
     <ProjectReference Include="..\VarApp.UseCases\VarApp.UseCases.csproj" />
     <ProjectReference Include="..\VarApp\VarApp.Core.csproj" />
   </ItemGroup>
