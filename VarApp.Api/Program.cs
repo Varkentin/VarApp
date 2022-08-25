@@ -4,7 +4,7 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-//DependencyContainer.Common(builder.Services);
+DependencyContainer.Common(builder.Services);
 
 #region Configure_Application
 

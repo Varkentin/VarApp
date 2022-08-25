@@ -5,4 +5,6 @@
         User,
         Order
     }
+
+    public record DetailingProp(string Type, int Position, string Title);
 }

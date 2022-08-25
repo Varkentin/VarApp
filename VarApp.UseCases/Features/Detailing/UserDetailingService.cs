@@ -11,11 +11,18 @@
             _userService = userService;
         }
 
-        public void GetWorkbook(List<IDetailingProp> props, Stream outputStream)
+        public void GetWorkbook(IReadOnlyCollection<DetailingProp> props, Stream outputStream)
         {
             var users = new List<User>();
 
-            FillTable(users, props.Cast<UserDetailingProp>().ToList());
+            //FillTable(users, props.Select(p => new UserDetailingProp
+            //{
+            //    Position = p.Position,
+            //    Title = p.Title,
+            //    Type = ()p.Type
+                
+
+            //}));
             // _package.SaveAs(new FileInfo(@"C:\Test_Projects\myworkbook.xlsx"));
             // _package.SaveAs(outputStream);
         }
@@ -40,11 +47,11 @@
         private void FillBody(List<User> users, List<UserDetailingProp> props)
         {
             int row = 2;
-            foreach (var user in users)
+            users.ForEach(u =>
             {
-                FillRow(user, props, row);
+                FillRow(u, props, row);
                 row++;
-            }
+            });
         }
 
         private void FillRow(User user, List<UserDetailingProp> props, int row)

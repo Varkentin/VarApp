@@ -2,10 +2,10 @@
 {
     public interface IDetailingServiceProvider
     {
-        void GetWorkbook(List<IDetailingProp> props, Stream outputStream);
+        void GetWorkbook(IReadOnlyCollection<DetailingProp> props, Stream outputStream);
     }
     public interface IDetailingService
     {
-
+        void GetWorkbook(DetailingType type, IReadOnlyCollection<DetailingProp> props, Stream outputStream);
     }
 }

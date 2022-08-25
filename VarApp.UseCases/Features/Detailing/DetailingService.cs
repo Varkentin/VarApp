@@ -8,7 +8,7 @@
             _userService = userService;
         }
 
-        public void GetWorkbook(List<IDetailingProp> props, DetailingType type, Stream outputStream) 
+        public void GetWorkbook(DetailingType type, IReadOnlyCollection<DetailingProp> props, Stream outputStream) 
             => GetProvider(type).GetWorkbook(props, outputStream);
 
         public IDetailingServiceProvider GetProvider(DetailingType type) => type switch

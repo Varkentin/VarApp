@@ -1,30 +1,17 @@
-﻿namespace VarApp.Api.AppStart
+﻿using VarApp.Core.Contracts;
+using VarApp.Core.Contracts.Users;
+using VarApp.UseCases.Features.Detailing;
+using VarApp.UseCases.Features.Users;
+
+namespace VarApp.Api.AppStart
 {
     public partial class DependencyContainer
     {
         public static void Common(IServiceCollection services)
         {
+            services.AddTransient<IUserService, UserService>();
+            services.AddTransient<IDetailingService, DetailingService>();
 
-            //services.AddTransient<ApplicationUserStore>();
-            //services.AddTransient<ICloudService, CloudService>();
-            //services.AddTransient<IApplicationDbContext, ApplicationDbContext>();
-            //services.AddScoped<ApplicationClaimsPrincipalFactory>();
-
-            //// services
-            //services.AddTransient<ITagService, TagService>();
-            //services.AddTransient<ILogService, LogService>();
-            //services.AddTransient<IReviewService, ReviewService>();
-            //services.AddTransient<IAccountService, AccountService>();
-            //services.AddTransient<IProfileService, IdentityProfileService>();
-            //services.AddTransient<ICacheService, CacheService>();
-            //services.AddTransient<ICorsPolicyService, IdentityServerCorsPolicy>();
-            //services.AddTransient<IEmailService, EmailService>();
-
-            //// providers
-            //services.AddTransient<IProductProvider, ProductProvider>();
-
-            //// notifications
-            //Notifications(services);
         }
     }
 }
